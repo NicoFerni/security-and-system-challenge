@@ -1,0 +1,21 @@
+.div {
+    margin-right: 200px;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #967efd;
+    border-radius: 5px;
+    display: inline-block; 
+    word-break: break-all;
+    max-width: 20ch;
+    max-height: 500px;
+    float: right;
+}
+
+.title{
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.ul{
+  font-family: 'Barlow',  sans-serif
+}

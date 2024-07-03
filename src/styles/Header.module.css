@@ -1,0 +1,21 @@
+.div{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3em;
+    justify-content: center;
+    background-color: #967efd;
+    border-radius: 10px;
+}
+
+.user{
+    background-color: #3139f6;
+    padding:20px;
+    border-radius: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.image{
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px
+}
