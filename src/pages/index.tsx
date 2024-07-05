@@ -3,7 +3,6 @@ import { Header } from "../components/header";
 import { Interest } from "../components/interest";
 import Form from "../components/form";
 import Head from 'next/head'
-import styles from '@/styles/Header.module.css'
 
 export default function Home() {
 
