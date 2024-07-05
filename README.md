@@ -1,14 +1,14 @@
-##This is a Challenge for Security and System. 
+## Security and System challenge. 
 
 ### Project Requirements
 
 #### HTML and CSS:
-- Create a web page layout that includes:
+- Create a web page that includes:
   - A header with the user's name and a profile picture. [X]
   - An "About Me" section with a brief description of the user. [X]
   - A list of the user's interests. [X]
   - A contact form with fields for name, email, and message. [X]
-- Use CSS (without frameworks like Bootstrap) to style the page. It should be responsive and look good on both mobile and desktop devices. 
+  - Use CSS (without frameworks like Bootstrap) to style the page. It should be responsive and look good on both mobile and desktop devices. 
 
 #### React and Next.js 14:
 - Create the project structure with Next.js 14. [X]
@@ -42,4 +42,11 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 Also I have already deployed the project on vercel (https://security-and-system-challenge-chi.vercel.app/)
 
-# security-and-system-challenge
+
+## Author
+
+Nicolas Fernandez
+- https://github.com/NicoFerni
+- https://www.linkedin.com/in/nicolasfernandev/
+
+
