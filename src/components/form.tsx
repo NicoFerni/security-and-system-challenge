@@ -1,73 +1,65 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import styles from '@/styles/Form.module.css'
-
-interface FormData {
-    name: string;
-    email: string;
-    message: string
-}
+import FormInput from './formInput'
 
 
-export function Form() {
+export default function Form() {
 
-    const [sendText, setSendText] = useState('')
+    const [values, setValues] = useState<any>({
+        name: '',
+        mail: '',
+        message: ''
+    })
 
-    const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
-        const formData: FormData = {
-            name: e.currentTarget.value,
-            email: e.currentTarget.value,
-            message: e.currentTarget.value,
+    const inputs = [
+        {
+            id: 1,
+            name: 'name',
+            type: 'text',
+            placeholder: 'Ingrese su nombre',
+            label: 'Nombre ',
+            errorMessage: 'El nombre no puede estar vacio y no debe contener caracteres especiales',
+            pattern: `^[A-Za-z]{1,20}$`,
+            required: true
+        },
+        {
+            id: 2,
+            name: 'email',
+            type: 'email',
+            placeholder: 'Ingrese su email',
+            label: 'Email ',
+            errorMessage: 'Debes ingresar una direccion de correo valida',
+            required: true
+        },
+        {
+            id: 3,
+            name: 'message',
+            type: 'text',
+            placeholder: 'Deje su mensaje',
+            label: 'Mensaje ',
+            errorMessage: 'Campo obligatorio',
+            required: true
         }
-        setSendText('Mensaje enviado!')
+    ]
+
+    const handleSubmit = (e: any) => {
+        e.preventDefault()
     }
 
-    console.log(onSubmit)
+    const onChange = (e: any) => {
+        setValues({ ...values, [e.target.name]: e.target.value })
+    }
     return (
         <div className={styles.div}>
-            <h1 className={styles.text}>Contacto</h1>
-            <form onSubmit={onSubmit}>
-                <label className={styles.label}>
-                    Nombre
-                </label>
-                <input
-                    className={styles.input}
-                    placeholder='Ingrese su nombre'
-                    type='name'
-                    id='name'
-                    name='name'
-                />
-
-                <label className={styles.label}>
-                    Email
-                </label>
-                <input
-                    className={styles.input}
-                    placeholder='Ingrese un mail valido'
-                    
-                    id="email"
-                    name="email"
-                />
-
-                <label className={styles.label}>
-                    Mensaje
-                </label>
-                <textarea
-                    className={styles.input}
-                    placeholder='Escriba su mensaje'
-                    id="message"
-                    name="message"
-                >
-
-                </textarea>
-
-                <button className={styles.button} type="submit">
-                    Enviar
-                </button>
-
-                {sendText && <p className={styles.sendText}>{sendText}</p>}
+            <form onSubmit={handleSubmit} className={styles.form}>
+                <h1 className={styles.h1}>Contacto</h1>
+                { 
+                inputs.map((input: any) => (   
+                    <FormInput key={input.id} {...input} value={values[input.name]} onChange={onChange} />
+                ))
+                }
+                <button className={styles.button}>Enviar</button>
             </form>
         </div>
-
     )
 }

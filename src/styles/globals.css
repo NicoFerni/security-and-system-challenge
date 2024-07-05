@@ -1,8 +1,5 @@
 body {
-    background-color: #3139f6;
-    font-family: 'Barlow Condensed'
-  }
-
-h1 {
-   
+  background-image: linear-gradient(to right bottom, #330537, #451f5f, #4d3b8b, #4759bb, #127aeb);
+  font-family: 'Roboto', sans-serif;
+  background-size: auto;
 }

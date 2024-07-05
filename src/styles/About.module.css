@@ -12,11 +12,9 @@
   .title {
     display: flex;
     justify-content: center;
-    font-family: 'Barlow Condensed', sans-serif;
   }
   
   .paragraph {
-    font-family: 'Barlow', sans-serif;
     display: flex;
     justify-content: center;
     padding-left: 10px;
