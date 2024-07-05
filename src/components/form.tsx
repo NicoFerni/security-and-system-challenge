@@ -1,4 +1,4 @@
-import { useState, FormEvent,   } from 'react';
+import { useState, FormEvent, } from 'react';
 import styles from '@/styles/Form.module.css';
 import FormInput from './formInput';
 import { inputs, InputType } from '../data/inputs';
@@ -30,12 +30,12 @@ export default function Form() {
         const newErrors: FormErrors = {};
 
         inputs.forEach((input: InputType) => {
-            const value = values[input.name as keyof FormValues]; // Type assertion
+            const value = values[input.name as keyof FormValues]; 
             if (!value) {
                 newErrors[input.name] = `${input.label} no puede estar vacío`;
             } else if (input.name === 'mail' && !/\S+@\S+\.\S+/.test(values.mail)) {
                 newErrors.mail = 'Debes ingresar una dirección de correo válida';
-            } 
+            }
         });
 
         setErrors(newErrors);
@@ -77,9 +77,8 @@ export default function Form() {
                                     value={values[input.name as keyof FormValues]}
                                     onChange={onChange}
                                     errorMessage={errors[input.errorMessage]}
-                                /> 
-                                {errors[input.name] && <span className={styles.error}>{errors[input.name]}</span>}
-                                </div>
+                                />
+                            </div>
 
                         )}
                     </div>
