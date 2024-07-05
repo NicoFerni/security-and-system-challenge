@@ -33,8 +33,6 @@ export default function Form() {
             const value = values[input.name as keyof FormValues]; 
             if (!value) {
                 newErrors[input.name] = `${input.label} no puede estar vacío`;
-            } else if (input.name === 'mail' && !/\S+@\S+\.\S+/.test(values.mail)) {
-                newErrors.mail = 'Debes ingresar una dirección de correo válida';
             }
         });
 

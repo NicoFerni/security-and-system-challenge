@@ -1,53 +1,19 @@
 .div {
-    /* margin-right: 400px;
-    margin-left: 30%; 
-    margin-right: 30%;
-    margin-top: 20px; */
-    margin: 20px auto;
-    background-color: #967efd;
-    border-radius: 5px;
-    word-break: break-all;
-    max-width: 20ch;
-    max-height: 500px;
-    float: right;
-    padding: 10px;
+  margin: 20px auto;
+  background-color: #967efd;
+  border-radius: 5px;
+  word-break: break-all;
+  max-width: 50ch;
+  max-height: 500px;
+  padding: 10px;
 }
 
-.title{
+.title {
   padding-top: 0px;
   text-align: center;
 }
 
-.li{
+.li {
   padding: 3px;
   word-break: break-all;
-}
-
-.ul{
-  margin-right: 20px;
-}
-
-
-@media (min-width: 1200px) {
-  .div {
-      margin-right: 20%;
-      margin-left: 20%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-  .div {
-      margin-right: 20%;
-      margin-left: 20%;   
-  }
-
-}
-
-
-@media (max-width: 767px) {
-  .div {
-      float: none; 
-      margin: 35px 35px; 
-      max-width: 90%; 
-  }
 }
