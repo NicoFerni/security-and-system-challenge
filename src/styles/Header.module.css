@@ -18,3 +18,29 @@
     margin-top: 5px;
     margin-bottom: 5px
 }
+
+@media (max-width:310px) {
+    .div{
+        column-gap: 1em;
+    }
+    .user{
+        padding: 10px;
+    }
+    .image{
+        margin-top: 2px;
+        margin-bottom: 2px
+    }
+}
+
+@media (max-width:260px) {
+    .div{
+        column-gap: 0em;
+    }
+    .user{
+        padding: 5px;
+    }
+    .image{
+        margin-top: 1px;
+        margin-bottom: 1px
+    }
+}

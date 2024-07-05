@@ -1,5 +1,5 @@
 body {
   background-image: linear-gradient(to right bottom, #330537, #451f5f, #4d3b8b, #4759bb, #127aeb);
   font-family: 'Roboto', sans-serif;
-  background-size: auto;
+  overflow: hidden;
 }

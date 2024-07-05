@@ -6,24 +6,24 @@ const FormInput = (props: any) => {
 
     const [focus, setFocus] = useState(false)
 
-    const {label, onChange, errorMessage, id,...inputProps} = props
+    const { label, onChange, errorMessage, id, ...inputProps } = props
 
-    const handleFocus = (e: any) =>{
+    const handleFocus = (e: any) => {
         setFocus(true)
     }
 
-    return(
-        <div className={styles.formInput}> 
+    return (
+        <div className={styles.formInput}>
             <label>{label}</label>
-            <input 
+            <input
                 {...inputProps}
                 onChange={onChange}
                 onBlur={handleFocus}
                 focused={focus.toString()}
             />
-            <span className={styles.span}>{errorMessage}</span>
+            {errorMessage && <span className={styles.span}>{errorMessage}</span>}
         </div>
-    )
+    );
 
 }
 

@@ -2,15 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    max-height: 500px;
+    background-size: contain;
 }
 
 .form{
     flex-direction: column;
-    background-color: white;
     padding: 0px 60px;
     width: 18vw;
-    height: 55vh;
+    height: 60vh;
     border-radius: 5px;
     background-color: #967efd;
 }
@@ -29,4 +29,35 @@
     border-radius: 5px;
     font-weight: bold;
     font-size: 18px;
+}
+
+/* .button:hover{
+
+} */
+
+.span{
+    font-size: x-large;
+    color: green;
+    font-weight: bold;
+}
+
+.textarea{
+    max-width: 300px;
+    max-height: 150px
+}
+
+.divtextarea{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    background-color: #6553b4;
+} 
+
+.label{
+    font-weight:100;
+    font-size: medium;
+    margin: 2;
 }

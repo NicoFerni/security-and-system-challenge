@@ -2,11 +2,6 @@ import Image from 'next/image'
 import styles from '@/styles/Header.module.css'
 import data from "@/data/info.json"
 
-export interface User {
-    user: string;
-    about: string;
-    interest: string[];
-}
 
 export function Header(){
 

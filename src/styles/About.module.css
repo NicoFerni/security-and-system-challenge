@@ -1,23 +1,47 @@
 .div {
-    margin-top: 20px;
-    margin-left: 200px;
-    background-color: #967efd;
-    border-radius: 5px;
-    display: inline-block; 
-    word-break: break-all;
+  margin-top: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  background-color: #967efd;
+  border-radius: 5px;
+  display: inline-block;
+  word-break: keep-all;
+  max-width: 60ch;
+  max-height: 500px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.paragraph {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+@media only screen and (min-width: 800px) and (max-width:2000) {
+  .div {
+    margin-left: 10%;
     max-width: 60ch;
     max-height: 500px;
   }
-  
-  .title {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .paragraph {
-    display: flex;
-    justify-content: center;
-    padding-left: 10px;
-    padding-right: 10px
 }
-  
+
+
+@media only screen and (min-width: 200px) and (max-width:800px) {
+  .div {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 200px) {
+  .div {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
