@@ -1,8 +1,8 @@
-This is a Challenge for Security and System. 
-Requirement:
-## Project Requirements
+##This is a Challenge for Security and System. 
 
-### HTML and CSS:
+### Project Requirements
+
+#### HTML and CSS:
 - Create a web page layout that includes:
   - A header with the user's name and a profile picture. [X]
   - An "About Me" section with a brief description of the user. [X]
@@ -10,12 +10,12 @@ Requirement:
   - A contact form with fields for name, email, and message. [X]
 - Use CSS (without frameworks like Bootstrap) to style the page. It should be responsive and look good on both mobile and desktop devices. 
 
-### React and Next.js 14:
+#### React and Next.js 14:
 - Create the project structure with Next.js 14. [X]
 - Implement the necessary components for each section of the page (e.g., Header, About, Interests, ContactForm). [X]
 - Implement the contact form with basic validation and display a success message upon submission (real submissions are not required). [X]
 
-### Extras (Plus):
+#### Extras (Plus):
 - Use CSS Modules for styling management. [X]
 - Add smooth animations or transitions to enhance the user experience.
 - Include basic tests with Jest or Testing Library.
