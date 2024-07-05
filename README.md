@@ -8,7 +8,7 @@
   - An "About Me" section with a brief description of the user. [X]
   - A list of the user's interests. [X]
   - A contact form with fields for name, email, and message. [X]
-  - Use CSS (without frameworks like Bootstrap) to style the page. It should be responsive and look good on both mobile and desktop devices. 
+  - Use CSS (without frameworks like Bootstrap) to style the page. It should be responsive and look good on both mobile and desktop devices. [X]
 
 #### React and Next.js 14:
 - Create the project structure with Next.js 14. [X]
