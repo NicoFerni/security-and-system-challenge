@@ -40,7 +40,8 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 ## Deploy on Vercel
 
-The project is deployed on Vervel (https://security-and-system-challenge-chi.vercel.app/)
+The project is deployed on Vervel
+ (https://security-and-system-challenge-chi.vercel.app/)
 
 
 ## Author
